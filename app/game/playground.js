@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-    const IMAGES_URL = '../play/images/categories/';
+    const IMAGES_URL = './images/categories/';
 
     function Card (category, type) {
         this.category = category;
