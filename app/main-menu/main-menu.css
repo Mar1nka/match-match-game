@@ -1,3 +1,4 @@
+@import "../../styles/colors.css";
 
 .header {
     height: 200px;
@@ -12,8 +13,8 @@
     font-weight: bold;
     font-size: 5em;
     text-transform: uppercase;
-    color: #111111;
-    text-shadow: 3px 3px 5px #F6D667;
+    color: var(--secondary-bg-color-dark);
+    text-shadow: 3px 3px 5px var(--main-bg-color-dark);
 }
 
 .main {
@@ -50,25 +51,23 @@
     height: 400px;
     width: 350px;
     margin: 0 auto;
-    background: var(--main-vinous-colors);
-    box-shadow: 0 0 16px 7px #7E6509;
+    background: var(--main-bg-color-dark);
     border-radius: 30px;
 }
 
 .main-menu__navigation-item {
     width: 280px;
     border-radius: 15px;
-    background: #F3B60D;
+    background: var(--secondary-bg-color-dark);
     text-transform: uppercase;
     font-size: 2em;
-    color: #111111;
-    box-shadow: inset 0 0 9px 4px #7E6509;
+    color: var(--main-bg-color-dark);
     padding: 15px 0px;
     text-decoration: none;
     transition: background 0.3s;
 }
 
 .main-menu__navigation-item:hover {
-    background: #F6D667;
+    background: var(--secondary-bg-color-light);
     cursor: pointer;
 }

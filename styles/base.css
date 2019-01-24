@@ -1,10 +1,6 @@
 @import "fonts.css";
 @import "normalize.css";
 
-:root {
-    --main-vinous-colors: #351212;
-}
-
 * {
     box-sizing: border-box;
     -webkit-user-drag: none;
@@ -13,7 +9,7 @@
 
 html {
     height: 100%;
-    background: linear-gradient(to bottom, #7E6509, #E8C44C) no-repeat;
+    background: var(--main-bg-color-light) ;
 }
 
 body {
@@ -28,8 +24,7 @@ body {
     height: 80px;
     width: 145px;
     margin: 0 auto;
-    background: #111111;
-    box-shadow: 0 0 16px 7px #7E6509;
+    background: var(--main-bg-color-dark);
     border-radius: 15px;
 
     display: flex;
@@ -42,17 +37,16 @@ body {
     text-decoration: none;
     width: 115px;
     border-radius: 15px;
-    background: #F3B60D;
+    background: var(--secondary-bg-color-dark);
     text-transform: uppercase;
     font-size: 1.5em;
-    color: #111111;
-    box-shadow: inset 0 0 9px 4px #7E6509;
+    color: var(--main-bg-color-dark);
     padding: 15px 0;
     transition: background 0.3s;
 }
 
 .menu__item:hover {
-    background: #F6D667;
+    background: var(--secondary-bg-color-light);
     cursor: pointer;
 }
 
